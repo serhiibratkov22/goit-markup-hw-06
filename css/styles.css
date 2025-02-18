@@ -296,19 +296,35 @@ button {
   color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* .nav-link {
+  color: #404bbf;
+} */
 
 .ul-cont-mob {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  font-style: normal;
 }
 
 .contacts-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.contacts-link-mail {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.contacts-link-mob {
+  color: #4d5ae5;
 }
 
 .ul-svg-mob {
@@ -369,7 +385,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/Dark-bg-tab-min.jpg);
+    url(../images/Dark-bg-mob@1x-min.jpg);
   background-position: center;
   background-repeat: no-repeat;
   max-width: 320px;
@@ -391,18 +407,16 @@ button {
 }
 
 .h-one {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 56px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
   max-width: 216px;
-  /* height: 120px; */
   margin: 0 auto;
-  /* margin-right: auto; */
   margin-bottom: 72px;
-  padding: 10px;
 }
 
 .first-btn {
@@ -469,15 +483,16 @@ button {
     max-width: 1440px;
 
     padding: 188px 0;
-
-    @media screen and (min-resolution: 2x) {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/people-office-desc@2x-min.jpg);
-    }
   }
+
+  @media screen and (min-resolution: 2x) {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-desc@2x-min.jpg);
+  }
+
   .h-one {
     margin-bottom: 48px;
   }
@@ -533,7 +548,7 @@ button {
 
 .princ-item {
   width: 288px;
-  height: 120px;
+  /* height: 120px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -545,7 +560,7 @@ button {
   }
   .princ-item {
     width: 356px;
-    height: 120px;
+    /* height: 120px; */
     width: calc((100% - 24px) / 2);
   }
   .princ-h {
@@ -571,7 +586,7 @@ button {
   .princ-item {
     width: calc((100% - 72px) / 4);
     width: 264px;
-    height: 224px;
+    /* height: 224px; */
   }
   .princ-h {
     font-weight: 500;
@@ -1160,6 +1175,7 @@ button {
   color: rgba(46, 47, 66, 0.4);
   resize: none;
   padding: 8px 16px;
+  border-radius: 4px;
 }
 .modal-textarea::placeholder {
   font-size: 12px;
@@ -1196,6 +1212,7 @@ button {
   color: #8e8f99;
   display: flex;
   align-items: center;
+  margin-top: 16px;
 }
 
 .modal-privacy-link {
@@ -1205,7 +1222,7 @@ button {
   color: #4d5ae5;
 }
 
-.input-checkbox: checked + .modal-label .checkbox-text {
+.input-checkbox:checked + .modal-label .checkbox-text {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
